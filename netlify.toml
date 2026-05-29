@@ -1,0 +1,8 @@
+[build]
+  functions = "functions"
+
+[[redirects]]
+  from = "/api/kalshi/*"
+  to = "/.netlify/functions/kalshi-proxy"
+  status = 200
+  force = true

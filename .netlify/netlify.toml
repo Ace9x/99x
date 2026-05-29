@@ -1,0 +1,40 @@
+redirectsOrigin = "config"
+plugins = []
+functionsDirectory = "C:\\Users\\twoge\\Downloads\\edgepro-cli-deploy\\functions"
+functionsDirectoryOrigin = "config-v1"
+headers = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "C:\\Users\\twoge\\Downloads\\edgepro-cli-deploy"
+publishOrigin = "default"
+functions = "C:\\Users\\twoge\\Downloads\\edgepro-cli-deploy\\functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[redirects]]
+from = "/api/kalshi/*"
+to = "/.netlify/functions/kalshi-proxy"
+status = 200.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
